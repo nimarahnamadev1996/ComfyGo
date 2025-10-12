@@ -26,7 +26,7 @@ const FormContainer = ({action,children}:{action:actionFunction,children:React.R
   }, [state]);
 
   return (
-    <form action={formAction}>
+    <form action={formAction} >
         {children}
     </form>
   )
