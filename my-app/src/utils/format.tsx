@@ -15,3 +15,11 @@ export function formatQuantity(quantity: number, noun: string): string {
 }
 
 
+
+export const formatDate = (date: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }).format(date);
+};
