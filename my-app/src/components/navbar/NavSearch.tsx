@@ -10,7 +10,7 @@ import { Input } from '../ui/input';
 const NavSearch = () => {
 
   const searchParams = useSearchParams();
-  const pathname = usePathname();
+ 
   const {replace} = useRouter()
 
 
@@ -27,7 +27,7 @@ const NavSearch = () => {
       params.delete('search')
     }
 
-    replace(`${pathname}?${params.toString()}`)
+    replace(`/?${params.toString()}`)
 
   },300)
 
